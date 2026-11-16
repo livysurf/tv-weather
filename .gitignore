@@ -1,0 +1,6 @@
+android-sdk/
+gradle-8.7/
+*.zip
+.gradle/
+build/
+local.properties
