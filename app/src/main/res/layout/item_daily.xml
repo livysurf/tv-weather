@@ -11,9 +11,47 @@
     android:paddingTop="16dp"
     android:paddingBottom="16dp">
 
-    <TextView android:id="@+id/day_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20°" android:textColor="#FFFFFF" android:textSize="22sp" android:fontFamily="sans-serif-medium"/>
-    <TextView android:id="@+id/day_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="L 15°" android:textColor="#80FFFFFF" android:textSize="12sp"/>
-    <TextView android:id="@+id/day_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="MON" android:textColor="#B3FFFFFF" android:textSize="12sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.1"/>
-    <View android:layout_width="32dp" android:layout_height="2dp" android:layout_marginTop="8dp" android:background="#FFD700"/>
-    <TextView android:id="@+id/day_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone"/>
+    <!-- Softened Text Colors -->
+    <TextView 
+        android:id="@+id/day_temp" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="20°" 
+        android:textColor="#F0F0F0" 
+        android:textSize="24sp" 
+        android:fontFamily="sans-serif-light"/>
+        
+    <TextView 
+        android:id="@+id/day_low" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="4dp" 
+        android:text="L 15°" 
+        android:textColor="#80FFFFFF" 
+        android:textSize="12sp" 
+        android:fontFamily="sans-serif-light"/>
+        
+    <TextView 
+        android:id="@+id/day_name" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="16dp" 
+        android:text="MON" 
+        android:textColor="#99FFFFFF" 
+        android:textSize="11sp" 
+        android:fontFamily="sans-serif-medium" 
+        android:letterSpacing="0.1"/>
+        
+    <!-- Muted Champagne Gold Line instead of bright Yellow -->
+    <View 
+        android:layout_width="32dp" 
+        android:layout_height="2dp" 
+        android:layout_marginTop="8dp" 
+        android:background="#B39B7A"/>
+        
+    <TextView 
+        android:id="@+id/day_icon" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
 </LinearLayout>
