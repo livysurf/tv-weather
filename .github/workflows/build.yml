@@ -10,10 +10,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
-    - name: Install Android 34 Tools
-      run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+    - name: Install Android SDK Packages
+      run: |
+        yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null
+        $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-34" "build-tools;34.0.0"
     - name: Build with Gradle
       run: gradle assembleDebug
     - name: Upload APK
